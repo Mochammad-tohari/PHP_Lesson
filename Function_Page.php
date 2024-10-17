@@ -1,10 +1,17 @@
 <?php
 
-function salam($nama_ku)
+function salam($nama_ku, $lesson)
 {
 
-    return "Welcome di belajar fungsi " . $nama_ku;
+    return "Welcome di  " . $lesson . "," . $nama_ku;
 
+}
+
+function hitung_uang($nominal, $jumlah)
+{
+    $num = $nominal * $jumlah;
+    $money = "Rp " . number_format($num, 2, ",", ".");
+    return $money;
 }
 
 ?>
@@ -20,7 +27,8 @@ function salam($nama_ku)
 
 <body>
 
-    <h1><?php echo salam("Mochammad Tohari"); ?></h1>
+    <h1><?php echo salam("Mochammad Tohari ", " belajar fungsi"); ?></h1>
+    <h1><?php echo hitung_uang(5000, 5); ?></h1>
 
 </body>
 
