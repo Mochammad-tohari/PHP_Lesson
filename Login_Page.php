@@ -67,7 +67,7 @@ if (isset($_POST['Submit_Login'])) {
 
                 <div style="margin-bottom: 16px;">
                     <label for="Password_Txt" style="margin-bottom: 8px; display: block;">Password</label>
-                    <input type="password" name="Password_Txt" placeholder="Username">
+                    <input type="password" name="Password_Txt" placeholder="Password">
                 </div>
 
                 <div style="margin-bottom: 16px;">

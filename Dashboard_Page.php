@@ -2,11 +2,13 @@
 
 session_start();
 
+// pengecekan akun jika akun salah maka akan tetap di page Login_Page
 if (!isset($_SESSION['username'])) {
     header("location: ./Login_Page.php");
     exit();
 }
 
+// End pengecekan akun jika akun salah maka akan tetap di page Login_Page
 
 ?>
 
